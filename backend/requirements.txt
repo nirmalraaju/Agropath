@@ -4,3 +4,12 @@ ultralytics
 python-multipart
 python-dotenv
 httpx
+pydantic
+pydantic[email]
+pyjwt
+motor
+pymongo
+google-genai
+scikit-learn
+scipy
+numpy

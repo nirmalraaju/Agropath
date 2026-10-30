@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { FiHome, FiCamera, FiMap, FiCloud, FiMessageSquare, FiClock } from 'react-icons/fi';
+import { FiHome, FiCamera, FiMap, FiCloud, FiMessageSquare, FiClock, FiBarChart2 } from 'react-icons/fi';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -8,6 +8,7 @@ const Sidebar = () => {
     { path: '/disease-detection', name: 'Disease Detection', icon: <FiCamera /> },
     { path: '/crop-recommendation', name: 'Crop Rec', icon: <FiMap /> },
     { path: '/weather', name: 'Weather', icon: <FiCloud /> },
+    { path: '/research', name: 'Research Benchmark', icon: <FiBarChart2 /> },
     { path: '/assistant', name: 'AI Assistant', icon: <FiMessageSquare /> },
     { path: '/history', name: 'History', icon: <FiClock /> },
   ];

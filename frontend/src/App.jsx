@@ -6,6 +6,7 @@ import CropRecommendation from './pages/CropRecommendation';
 import Weather from './pages/Weather';
 import Assistant from './pages/Assistant';
 import History from './pages/History';
+import ResearchEvaluation from './pages/ResearchEvaluation';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="disease-detection" element={<DiseaseDetection />} />
           <Route path="crop-recommendation" element={<CropRecommendation />} />
           <Route path="weather" element={<Weather />} />
+          <Route path="research" element={<ResearchEvaluation />} />
           <Route path="assistant" element={<Assistant />} />
           <Route path="history" element={<History />} />
         </Route>

@@ -5,25 +5,32 @@
 .env
 .env.*
 !.env.example
+backend/.env
 
 # Node
 node_modules/
 frontend/node_modules/
 frontend/dist/
 
-# Python
+# Python & Databases
 __pycache__/
 *.pyc
 venv/
 .venv/
+backend/venv/
+backend/uploads/
+*.db
+backend/agropath.db
 
-# Large ML model files
+# Large ML model files & weight dumps
 *.pt
+!backend/models/best.pt
 *.pth
 *.onnx
 *.h5
 *.keras
 *.safetensors
+best/
 
 # Large datasets
 datasets/
