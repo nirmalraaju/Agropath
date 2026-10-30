@@ -124,7 +124,25 @@ const DiseaseDetection = () => {
             <div className="card results-card fade-in">
               <h3>Analysis Results</h3>
               
-              {results.predictions && results.predictions.length > 0 ? (
+              {results.status === 'inappropriate_image' || results.is_leaf === false ? (
+                <div className="inappropriate-alert-box fade-in">
+                  <div className="inappropriate-icon">⚠️</div>
+                  <h4 className="inappropriate-title">Inappropriate Image Detected</h4>
+                  <div className="alert alert-warning mb-3">
+                    <FiAlertCircle size={20} />
+                    <span>{results.message || "The uploaded image does not appear to be a crop leaf."}</span>
+                  </div>
+                  {results.reason && (
+                    <p className="inappropriate-reason">
+                      <strong>Detection Reason:</strong> {results.reason}
+                    </p>
+                  )}
+                  <div className="guidance-box">
+                    <strong>Misinformation Prevention:</strong>
+                    <p>To ensure diagnostic accuracy, our model only analyzes verified crop leaves. Please upload a clear, focused photo of a plant leaf.</p>
+                  </div>
+                </div>
+              ) : results.predictions && results.predictions.length > 0 ? (
                 <div className="predictions-list">
                   {results.predictions.map((pred, idx) => (
                     <div key={idx} className="prediction-item">

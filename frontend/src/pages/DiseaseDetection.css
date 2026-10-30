@@ -229,3 +229,59 @@
   color: var(--text-muted);
   margin-top: 0.5rem;
 }
+
+/* Inappropriate Image Alert Box */
+.inappropriate-alert-box {
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.inappropriate-icon {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.inappropriate-title {
+  color: #b45309;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.alert-warning {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #92400e;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  text-align: left;
+}
+
+.inappropriate-reason {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+  text-align: left;
+  background: var(--bg-color);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #f59e0b;
+}
+
+.guidance-box {
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  margin-top: 1rem;
+}
+
+.guidance-box strong {
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+

@@ -31,6 +31,8 @@ async def detect_disease(file: UploadFile = File(...)):
         result = detector.predict(temp_filepath)
         return result
         
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     finally:
